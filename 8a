@@ -3,12 +3,12 @@
 #include<unistd.h>
 #include<dirent.h>
 #include<sys/stat.h>
-int main
+int main()
 {
 int fd1=0,fd2=0;
 char buf[50];
 
-if((fd1=open("t12.txt",0_RDWR,0))<0)
+if((fd1=open("t12.txt", O_RDWR,0))<0)
 printf("File open error");
 fd2=dup(fd1);
 
